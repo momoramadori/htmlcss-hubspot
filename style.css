@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 71, 91);
+}
 .container {
     width: 1080px;
     margin: auto;
-    border: 1px solid black;
     height: 100%;
 }
+
 .container::after {
     content: "";
     display: table;
@@ -21,42 +25,156 @@
     display: table;
     clear: both;
 }
+
+.btn {
+    border: 1px solid rgb(255, 122, 89);
+    border-radius: 3px;
+}
+.btn-primary {
+    background-color: rgb(255, 122, 89);
+    color: white;
+    border: none;
+    opacity: 1;
+}
+
 #header-top {
-    height: 120px;
-    background-color: red;
+    height: 84px;
+    width: 100%;
+    background-color: rgb(245, 248, 250);
+    border-bottom: 1px solid rgb(203, 214, 226);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
 }
-
-#header-bottom {
-    height: 120px;
-    background-color: coral;
-}
-
 #header-top-left {
     float: left;
     width: 50%;
-    height: 100%;
-    background-color: grey;
+    vertical-align: middle;
+}
+#header-top-left ul, #header-top-left li{
+    display: inline-block;
+}
+ #header-top-left li {
+    padding: 5px 10px 5px 0;
+    margin: 26px 10px 26px 0px;
+}
+
+#header-top-left i {
+    font-size: 16px;
+}
+#header-top-left li:first-child {
+    border-right: 2px solid rgb(203, 214, 226);
+}
+#header-top-left select {
+    border: none;
+    font-size: 14px;
+    color: rgb(51, 71, 91);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header-top-left a {
+    text-decoration: none;
+    color: rgb(51, 71, 91);
+    font-weight: 500;
 }
 
 #header-top-right {
     float: left;
     width: 50%;
-    height: 100%;
-    background-color: darkgrey;
+    text-align: right;
+}
+#header-top-right ul, #header-top-right li {
+    display: inline-block;
 }
 
+#header-top-right ul {
+    margin: 21px 0;
+}
+
+#header-top-right li {
+    margin-left: 12px;
+}
+
+#header-top-right i {
+    color: rgb(48, 179, 200);
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+#header-top-right li:first-child {
+    padding: 5px;
+}
+
+#header-top-right .btn a {
+    text-decoration: none;
+    color: rgb(255, 122, 89);
+}
+
+#header-top-right .btn-primary a {
+    text-decoration: none;
+    color: white;
+}
+
+#header-top-right .btn {
+    padding: 12px 30px;
+    color: rgb(255, 122, 89);
+}
+
+#btnone:hover {
+    background-color: rgb(255, 242, 238);
+}
+
+.btn-primary:hover {
+    opacity: 0.5;
+}
+#header-top-right .btn-primary {
+    padding: 12px 10px;
+}
+
+#header-bottom {
+    height: 91px;
+    background-color: white;
+    vertical-align: middle;
+}
+#header-bottom .container {
+    margin-top: 84px;
+}
 #header-bottom-left {
     float: left;
     width: 30%;
-    height: 100%;
-    background-color: blue;
 }
-
+#header-bottom-left img {
+    margin: 30.5px 0;
+}
 #header-bottom-right {
     float: left;
     width: 70%;
-    height: 100%;
-    background-color: lightblue;
+    text-align: right;
+}
+
+#header-bottom-right ul, #header-bottom-right li {
+    display: inline-block;
+}
+
+#header-bottom-right li  {
+    padding: 34.5px 15px;
+}
+
+#header-bottom-right li a {
+    padding: 36px 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(51, 71, 91);
+}
+#header-bottom-right select {
+    border: none;
+    font-size: 16px;
+    color: rgb(51, 71, 91);
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 #cta {
