@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1080px;
+    margin: auto;
+    border: 1px solid black;
+    height: 100%;
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#header-top {
+    height: 120px;
+    background-color: red;
+}
+
+#header-bottom {
+    height: 120px;
+    background-color: coral;
+}
+
+#header-top-left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: grey;
+}
+
+#header-top-right {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: darkgrey;
+}
+
+#header-bottom-left {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+
+#header-bottom-right {
+    float: left;
+    width: 70%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+#cta {
+    height: 500px;
+    background-color: orange;
+}
+
+#cta-main-text {
+    width: 40%;
+    background-color: green;
+    height: 350px;
+}
+
+#cta-button-text {
+    width: 15%;
+    background-color: darkgreen;
+    height: 150px;
+}
+
+#offer {
+    height: 600px;
+    background-color: purple;
+}
+#offer-top-left {
+    float: left;
+    width: 35%;
+    height: 250px;
+    background-color: red;
+}
+
+#offer-top-right {
+    float: left;
+    width: 65%;
+    height: 250px;
+    background-color: orange;
+}
+
+#offer-bottom-left {
+    float: left;
+    width: 33.3%;
+    height: 350px;
+    background-color: green;
+}
+
+#offer-bottom-middle {
+    float: left;
+    width: 33.3%;
+    height: 350px;
+    background-color: lightgreen;
+}
+
+#offer-bottom-right {
+    float: left;
+    width: 33.3%;
+    height: 350px;
+    background-color: darkgreen;
+}
+
+#numbers {
+    height: 600px;
+    background-color: lightcoral;
+}
+
+#numbers-top {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+#numbers-bottom {
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+.numbers-row {
+    float: left;
+    width:100%;
+    height: 200px;
+    background-color: grey;
+}
+
+.numbers-box {
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: green;
+    border: 1px solid white;
+}
+
+#growth {
+    height: 600px;
+    background-color: pink;
+}
+
+#growth-top {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+}
+#growth-top-left {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+
+#growth-top-right {
+    float: left;
+    width: 60%;s
+    height: 100%;
+    background-color: lightblue;
+}
+
+.gtr-row {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+.gtr-box {
+    float: left;
+    width: 25%;
+    height: 100px;
+    border: 1px solid white;
+}
+
+#growth-bottom {
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: yellow;
+}
+
+#growth-bottom-left {
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-color: grey;
+}
+
+#growth-bottom-right {
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-color: darkgrey;
+}
+
+footer {
+    height: 700px;
+    background-color: blue;
+}
+
+#footer-top {
+    float: left;
+    width: 100%;
+    height: 350px;
+}
+
+.linklist {
+    float: left;
+    width: 25%;
+    height: 350px;
+    border: 1px solid white;
+}
+
+#footer-middle {
+    height: 100px;
+    background-color: grey;
+    clear: both;
+}
+
+#footer-button {
+    float: right;
+    width: 25%;
+    height: 50px;
+    background-color: red;
+
+}
+
+#footer-social {
+    float: right;
+    clear: right;
+    width: 30%;
+    background-color: orange;
+    height: 50px;
+}
+
+#footer-language {
+    width: 100%;
+    height: 125px;
+    background-color: green;
+}
+
+#footer-info {
+    width: 100%;
+    height: 125px;
+}
+
+#fi-left {
+    float: left;
+    width: 50%;
+    height: 125px;
+    background-color: lightcoral;
+}
+
+#fi-right {
+    float: left;
+    width: 50%;
+    height: 125px;
+    background-color: red;
+}
+
+#message {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: lightgreen;
+}
