@@ -234,21 +234,48 @@ body {
 
 #offer-top-left {
     float: left;
-    width: 35%;
+    width: 34%;
     padding: 0 30px 0 0;
 }
 
 #offer-top-left h3 {
     font-size: 30px;
 }
+
 #offer-top-left p {
     line-height: 30px;
     font-size: 16px;
     margin-top: 30px;
 }
+
 #offer-top-right {
-    width: 65%;
+    width: 66%;
 }
+
+#offer-top-right li {
+    margin-left: 10px;
+}
+
+#offer-top-right p, #offer-top-right hr{
+    display: inline-block;
+}
+#offer-top-right hr {
+    width: 75%;
+    margin: 4px 3px;
+}
+
+#offer-top-right ul, #offer-top-right .btn {
+    float: left;
+}
+
+#offer-top-right ul {
+    width: 60%;
+}
+#offer-top-right .btn {
+    width: 40%;
+    margin: 0;
+}
+
 .boxed-text {
     float: left;
     background-color: white;
@@ -309,10 +336,13 @@ body {
     color: white;
     font-weight: 500;
     text-decoration: none;
-
+    padding: 20px 70px;
 }
-#offer-top-right li {
-    margin-left: 10px;
+
+.boxed-text:hover {
+    transform: scale(1.03);
+    box-shadow: 20px 20px 30px rgb(220, 223, 225);
+
 }
 #offer-bottom-left {
     width: 32%;
