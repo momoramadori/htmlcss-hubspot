@@ -12,7 +12,6 @@ body {
 .container {
     width: 1080px;
     margin: auto;
-    height: 100%;
 }
 
 .container::after {
@@ -552,75 +551,160 @@ body {
 }
 
 footer {
-    height: 700px;
-    background-color: blue;
+    background-color: rgb(51, 71, 91);
 }
 
-#footer-top {
-    float: left;
-    width: 100%;
-    height: 350px;
+#footer-top h4 {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+#footer-top li {
+    margin: 20px 0;
+}
+
+#footer-top a {
+    color: rgb(230, 233, 235) ;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#footer-top a:hover {
+    color: rgb(127, 209, 222);
+}
+/* attenzione al margine negativo */
+#footer-top select {
+    background-color: rgb(51, 71, 91);
+    border: 0;
+    color: rgb(230, 233, 235);
+    font-size: 14px;
+    font-family: font-family: 'Montserrat', sans-serif;
+    margin-left: -7px;
 }
 
 .linklist {
     float: left;
     width: 25%;
-    height: 350px;
-    border: 1px solid white;
-}
-
-#footer-middle {
-    height: 100px;
-    background-color: grey;
-    clear: both;
 }
 
 #footer-button {
-    float: right;
-    width: 25%;
-    height: 50px;
-    background-color: red;
-
+    float: left;
+    border-radius: 3px;
+    background-color: rgb(230, 233, 235);
+    padding: 10px 10px;
 }
 
-#footer-social {
-    float: right;
-    clear: right;
-    width: 30%;
-    background-color: orange;
-    height: 50px;
+#footer-button a  {
+    text-decoration: none;
+    color: rgb(51, 71, 91);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#footer-button a:hover {
+    color: rgb(51, 71, 91);
+}
+
+#footer-social ul, #footer-social li  {
+    display: inline-block;
+}
+
+#footer-social a {
+    text-decoration: none;
+    color: rgb(230, 233, 235);
+    font-size: 22px;
+}
+
+#footer-social li {
+    margin-right: 25px;
+}
+
+#footer-social li:last-child {
+    margin-right: 0;
 }
 
 #footer-language {
     width: 100%;
-    height: 125px;
-    background-color: green;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#footer-language ul, #footer-language li {
+    display: inline-block;
+}
+
+#footer-language li {
+    padding: 20px;
+}
+
+#footer-language a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(230, 233, 235);
+}
+
+#footer-language a:hover {
+    color: rgb(127, 209, 222);
 }
 
 #footer-info {
-    width: 100%;
-    height: 125px;
+    margin-top: 30px;
 }
 
 #fi-left {
     float: left;
     width: 50%;
-    height: 125px;
-    background-color: lightcoral;
 }
 
+#fi-left p {
+    font-size: 12px;
+    color: rgb(230, 233, 235);
+    font-weight: 400;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
 #fi-right {
     float: left;
     width: 50%;
-    height: 125px;
-    background-color: red;
+    text-align: right;
 }
 
+#fi-right ul, #fi-right li {
+    display: inline-block;
+}
+#fi-right li {
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+#fi-right a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+#fi-right a:hover {
+    color: rgb(127, 209, 222);
+}
 #message {
     position: fixed;
     bottom: 20px;
-    right: 5px;
-    height: 50px;
-    width: 50px;
-    background-color: lightgreen;
+    right: 20px;
+    border-radius: 50%;
+    background-color: rgb(71, 91, 111);
+    box-shadow: 2px 2px 10px black;
+    text-align: center;
+}
+
+#message img {
+    padding: 10px;
+    transform: scale(0.8);
+}
+
+#message:hover {
+    box-shadow: 3px 3px 15px black;
 }
