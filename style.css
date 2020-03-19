@@ -454,12 +454,13 @@ body {
     float: left;
     width: 100%;
     padding-top: 120px;
+    margin-bottom: 150px;
 }
 
 #growth-top-left {
     float: left;
     width: 30%;
-    margin-right: 10%;
+    margin-right: 15%;
 }
 
 #growth-top-left h3 {
@@ -480,44 +481,74 @@ body {
 
 #growth-top-right {
     float: left;
-    width: 60%;
-    height: 100%;
-    background-color: lightblue;
+    width: 55%;
 }
 
 .gtr-row {
     float: left;
     width: 100%;
-    height: 100px;
-    background-color: blue;
+    margin-bottom: 10px;
 }
 
-.gtr-box {
-    float: left;
-    width: 25%;
-    height: 100px;
-    border: 1px solid white;
+.gtr-box, .gtr-box-two {
+    float: right;
+    width: 20%;
+    text-align: center;
+    margin-left: 3%;
+}
+.gtr-row img {
+    width: 100%;
+    padding: 10px 5px;
 }
 
 #growth-bottom {
     float: left;
     width: 100%;
-    height: 400px;
-    background-color: yellow;
 }
 
 #growth-bottom-left {
     float: left;
     width: 50%;
-    height: 400px;
-    background-color: grey;
+    margin-bottom: 200px;
+    margin-right: 20%;
+}
+
+#growth-bottom-left h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+#gbl-top p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#gbl-bottom p {
+    clear: both;
+    font-size: 12px;
+}
+#gbl-bottom .btn {
+    float: left;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+#gbl-bottom a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 20px;
 }
 
 #growth-bottom-right {
     float: left;
-    width: 50%;
-    height: 400px;
-    background-color: darkgrey;
+    width: 30%;
+}
+
+#growth-bottom-right img {
+    width: 100%;
 }
 
 footer {
