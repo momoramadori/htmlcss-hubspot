@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Proprietà generali */
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(51, 71, 91);
@@ -30,12 +32,16 @@ body {
     border: 1px solid rgb(255, 122, 89);
     border-radius: 3px;
 }
+
 .btn-primary {
     background-color: rgb(255, 122, 89);
     color: white;
     border: none;
     opacity: 1;
 }
+
+/* Fine Proprietà generali */
+/* Proprietà header */
 
 #header-top {
     height: 84px;
@@ -47,15 +53,19 @@ body {
     width: 100%;
     font-size: 13px;
     font-weight: 500;
+    z-index: 10;
 }
+
 #header-top-left {
     float: left;
     width: 50%;
     vertical-align: middle;
 }
+
 #header-top-left ul, #header-top-left li{
     display: inline-block;
 }
+
  #header-top-left li {
     padding: 5px 10px 5px 0;
     margin: 26px 10px 26px 0px;
@@ -64,9 +74,11 @@ body {
 #header-top-left i {
     font-size: 16px;
 }
+
 #header-top-left li:first-child {
     border-right: 2px solid rgb(203, 214, 226);
 }
+
 #header-top-left select {
     border: none;
     font-size: 14px;
@@ -85,6 +97,7 @@ body {
     width: 50%;
     text-align: right;
 }
+
 #header-top-right ul, #header-top-right li {
     display: inline-block;
 }
@@ -129,6 +142,7 @@ body {
 .btn-primary:hover {
     opacity: 0.5;
 }
+
 #header-top-right .btn-primary {
     padding: 12px 10px;
 }
@@ -137,7 +151,6 @@ body {
     height: 91px;
     background-color: white;
     vertical-align: middle;
-    box-shadow: 0px 14px 50px -22px #000000;
 }
 
 #header-bottom .container {
@@ -173,6 +186,7 @@ body {
     text-decoration: none;
     color: rgb(51, 71, 91);
 }
+
 #header-bottom-right select {
     border: none;
     font-size: 16px;
@@ -181,6 +195,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
+
+/* Fine proprietà header */
+/* Inizio proprietà prima sezione */
 
 #cta {
     padding: 100px 0;
@@ -207,6 +224,7 @@ body {
     line-height: 30px;
 
 }
+
 #cta-button-text {
     width: 19%;
     padding-bottom: 100px;
@@ -218,17 +236,31 @@ body {
     padding: 30px 30px;
     margin: 25px 0;
 }
+
 #cta-button-text a {
     text-decoration: none;
     color: white;
 }
+
 #cta-button-text p {
     font-size: 12px;
     font-weight: 500;
 }
 
+/* Fine proprietà prima zezione */
+/* Inizio proprietà seconda sezione */
+
 #offer {
     background-color: rgb(245, 248, 250);
+}
+
+.offer-bottom {
+    padding-bottom: 100px;
+    margin-top: 20px;
+}
+
+.offer-top {
+    padding-top: 100px;
 }
 
 #offer-top-left {
@@ -258,6 +290,7 @@ body {
 #offer-top-right p, #offer-top-right hr{
     display: inline-block;
 }
+
 #offer-top-right hr {
     width: 75%;
     margin: 4px 3px;
@@ -270,9 +303,23 @@ body {
 #offer-top-right ul {
     width: 60%;
 }
+
 #offer-top-right .btn {
     width: 40%;
     margin: 0;
+}
+
+#offer-bottom-left {
+    width: 32%;
+}
+
+#offer-bottom-middle {
+    width: 32%;
+    margin: 0 2%;
+}
+
+#offer-bottom-right {
+    width: 32%;
 }
 
 .boxed-text {
@@ -282,6 +329,7 @@ body {
     border-radius: 3px;
     padding: 40px 40px 40px 30px;
 }
+
 .boxed-text ul, .boxed-text li {
     display: inline-block;
 }
@@ -301,10 +349,13 @@ body {
     font-size: 13px;
     margin: 20px 0;
 }
+
 /* commai sta cosa */
 #plonger {
     margin: 19px 0;
 }
+/* ??? */
+
 .boxed-text hr {
     background-color: rgb(230, 233, 235);
     border: 0;
@@ -317,7 +368,6 @@ body {
     font-size: 13px;
     padding: 15px 0;
 }
-
 
 .boxed-text i {
     color: rgb(255, 122, 89);
@@ -348,27 +398,9 @@ body {
     box-shadow: 20px 20px 30px rgb(220, 223, 225);
 
 }
-#offer-bottom-left {
-    width: 32%;
-}
 
-#offer-bottom-middle {
-    width: 32%;
-    margin: 0 2%;
-}
-
-
-#offer-bottom-right {
-    width: 32%;
-}
-
-.offer-bottom {
-    padding-bottom: 100px;
-    margin-top: 20px;
-}
-.offer-top {
-    padding-top: 100px;
-}
+/* Fine seconda sezione */
+/* Inizio terza sezione */
 
 #numbers {
     background-image: linear-gradient( 45deg, #00a4bd, #00bda5);
@@ -409,11 +441,10 @@ body {
 .numbers-box {
     float: left;
     width: 25%;
-    height: 200px;
     border: 1px solid white;
     border-bottom: 0;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 0;
 }
 
 #row-one .numbers-box {
@@ -454,6 +485,9 @@ body {
 .numbers-box p {
     margin-top: 15px;
 }
+
+/* Fine terza sezione */
+/* Inizio quarta sezione */
 
 #growth-top {
     float: left;
@@ -501,6 +535,7 @@ body {
     text-align: center;
     margin-left: 3%;
 }
+
 .gtr-row img {
     width: 100%;
     padding: 10px 5px;
@@ -540,6 +575,7 @@ body {
     padding: 20px 10px;
     margin-bottom: 30px;
 }
+
 #gbl-bottom a {
     text-decoration: none;
     color: white;
@@ -555,6 +591,9 @@ body {
 #growth-bottom-right img {
     width: 100%;
 }
+
+/* Fine quarta sezione */
+/* Inizio footer */
 
 footer {
     background-color: rgb(51, 71, 91);
@@ -580,6 +619,7 @@ footer {
 #footer-top a:hover {
     color: rgb(127, 209, 222);
 }
+
 /* attenzione al margine negativo */
 #footer-top select {
     background-color: rgb(51, 71, 91);
@@ -672,6 +712,7 @@ footer {
     margin-bottom: 60px;
     margin-top: 10px;
 }
+
 #fi-right {
     float: left;
     width: 50%;
@@ -681,6 +722,7 @@ footer {
 #fi-right ul, #fi-right li {
     display: inline-block;
 }
+
 #fi-right li {
     margin-right: 20px;
     padding-top: 5px;
@@ -696,6 +738,10 @@ footer {
 #fi-right a:hover {
     color: rgb(127, 209, 222);
 }
+
+/* Fine footer */
+/* fixed message */
+
 #message {
     position: fixed;
     bottom: 20px;
