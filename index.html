@@ -15,18 +15,21 @@
                 <div class="container">
                     <div id="header-top-left">
                         <ul>
-                            <li>
+                            <li class="fixed-li" id="border-li">
                                 <i class="fas fa-globe-americas"></i>
-                                <select>
-                                    <option value="English">English</option>
-                                    <option value="Chinese">Chinese</option>
-                                    <option value="Deutsch">Deutsch</option>
-                                    <option value="Espanol">Espanol</option>
-                                    <option value="Portugues">Portugues</option>
-                                    <option value="Francais">Francais</option>
-                                </select>
+                                <span>English
+                                    <ul>
+                                        <li>Japanese</li>
+                                        <li>English</li>
+                                        <li>Espanol</li>
+                                        <li>Deutsch</li>
+                                        <li>Francais</li>
+                                        <li>Portuges</li>
+                                    </ul>
+                                </span>
+                                <i class="fas fa-caret-down"></i>
                             </li>
-                            <li><a href="#">Contact Sales</a></li>
+                            <li class="fixed-li"><a href="#">Contact Sales</a></li>
                         </ul>
                     </div>
                     <div id="header-top-right">
@@ -52,6 +55,25 @@
                     <div id="header-bottom-right">
                         <ul>
                             <li>
+                                <span>Software</span>
+                                <i class="fas fa-caret-down"></i>
+                            </li>
+                            <li>
+                                <span><a href="#">Pricing</a></span>
+                            </li>
+                            <li>
+                                <span>Resources</span>
+                                <i class="fas fa-caret-down"></i>
+                            </li>
+                            <li>
+                                <span>Partners</span>
+                                <i class="fas fa-caret-down"></i>
+                            </li>
+                            <li>
+                                <span>About</span>
+                                <i class="fas fa-caret-down"></i>
+                            </li>
+                            <!-- <li>
                                 <select>
                                     <option value="">Software</option>
                                 </select>
@@ -73,7 +95,7 @@
                                 <select>
                                     <option value="">About</option>
                                 </select>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -363,10 +385,8 @@
                             <li><a href="#">Join a Local User Group</a></li>
                             <li><a href="#">PieSync Integrations</a></li>
                             <li><a href="#">HubSpot Templates</a></li>
-                            <li>
-                                <select>
-                                    <option>Free Tools & Generators</option>
-                                </select>
+                            <li><a id="no-link" href="#">Free Tools & Generators
+                                <i id="footer-caret" class="fas fa-caret-down"></i></a>
                             </li>
                             <li id="footer-button">
                                 <a href="#">Contact HubSpot Support</a>
