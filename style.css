@@ -225,6 +225,58 @@ body {
     color: rgb(124, 152, 182);
 }
 
+#header-bottom-right ul li .hover-div {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(203, 214, 226);
+    list-style-type: none;
+    transform: translate(-20%,2%);
+    padding: 0 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(203, 214, 226);
+}
+
+#header-bottom-right ul li:hover .hover-div{
+    display: block;
+}
+
+.hover-div div {
+    padding: 30px 15px;
+}
+
+.hover-div hr {
+    background-color: rgb(124, 152, 182);
+    border: 0;
+    height: 1px;
+
+
+}
+#header-bottom-right .menu-hover-div {
+    float: left;
+    width: 26%;
+    text-align: left;
+    margin-left:7%;
+}
+
+#header-bottom-right h4 {
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+#header-bottom-right p {
+    font-size: 12px;
+}
+
+#header-bottom-right p span {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#header-bottom-right .inline-elem {
+    display: inline-block;
+}
 /* Fine proprietà header */
 /* Inizio proprietà prima sezione */
 
