@@ -31,6 +31,13 @@ body {
 .btn {
     border: 1px solid rgb(255, 122, 89);
     border-radius: 3px;
+    color: rgb(255, 122, 89);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(255, 242, 238);
+    transition: all .5s ease-in-out;
 }
 
 .btn-primary {
@@ -38,6 +45,8 @@ body {
     color: white;
     border: none;
     opacity: 1;
+    text-decoration: none;
+    border-radius: 3px;
 }
 
 .btn-primary:hover {
@@ -102,14 +111,29 @@ body {
     background-color: white;
     border: 1px solid rgb(203, 214, 226);
     list-style-type: none;
-    transform: translate(30%,2%);
+    transform: translate(30%,4%);
     padding: 0 15px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgb(203, 214, 226);
 }
 
-#header-top-left ul li:hover ul{
+#header-top-left ul li ul::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid rgb(203, 214, 226);
+    display: none;
+    position: absolute;
+    top: -5%;
+    right: 37.5%;
+    transform: rotate(45deg);
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#header-top-left ul li:hover ul, #header-top-left ul li:hover ul::after {
     display: block;
 }
 
@@ -151,24 +175,9 @@ body {
     padding: 5px;
 }
 
-#header-top-right .btn a {
-    text-decoration: none;
-    color: rgb(255, 122, 89);
-}
-
-#header-top-right .btn-primary a {
-    text-decoration: none;
-    color: white;
-}
-
 #header-top-right .btn {
     padding: 12px 30px;
     color: rgb(255, 122, 89);
-}
-
-#btnone:hover {
-    background-color: rgb(255, 242, 238);
-    transition: all .5s ease-in-out;
 }
 
 #header-top-right .btn-primary {
@@ -238,7 +247,22 @@ body {
     box-shadow: 1px 1px 10px rgb(203, 214, 226);
 }
 
-#header-bottom-right ul li:hover .hover-div{
+#header-bottom-right ul li .hover-div::after {
+    content: "";
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border: 1px solid rgb(203, 214, 226);
+    display: none;
+    position: absolute;
+    top: -2.5%;
+    left: 27.5%;
+    transform: rotate(45deg);
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#header-bottom-right ul li:hover .hover-div, #header-bottom-right ul li:hover .hover-div::after{
     display: block;
 }
 
@@ -307,7 +331,7 @@ body {
 }
 
 #cta-button-text {
-    width: 19%;
+    width: 20%;
     padding-bottom: 100px;
 }
 
@@ -315,12 +339,10 @@ body {
     font-size: 16px;
     font-weight: 500;
     padding: 30px 30px;
-    margin: 25px 0;
 }
 
-#cta-button-text a {
-    text-decoration: none;
-    color: white;
+#cta-button-text div {
+    margin: 50px 0;
 }
 
 #cta-button-text p {
@@ -377,17 +399,16 @@ body {
     margin: 4px 3px;
 }
 
-#offer-top-right ul, #offer-top-right .btn {
-    float: left;
-}
-
 #offer-top-right ul {
+    float: left;
     width: 60%;
 }
 
-#offer-top-right .btn {
+
+#offer-top-right a {
     width: 40%;
     margin: 0;
+    float: left;
 }
 
 #offer-bottom-left {
@@ -459,16 +480,15 @@ body {
     font-weight: 500;
 }
 
-.boxed-text .btn  {
+.boxed-text a  {
     text-align: center;
     padding: 20px 0;
     margin-top: 15px;
+    display: block;
 }
 
 .boxed-text a {
-    color: white;
     font-weight: 500;
-    text-decoration: none;
     padding: 20px 70px;
 }
 
@@ -616,6 +636,9 @@ body {
 }
 
 .gtr-row img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
     width: 100%;
     padding: 10px 5px;
 }
@@ -649,17 +672,13 @@ body {
     clear: both;
     font-size: 12px;
 }
-#gbl-bottom .btn {
+
+#gbl-bottom a {
+    font-weight: 500;
+    padding: 20px;
     float: left;
     padding: 20px 10px;
     margin-bottom: 30px;
-}
-
-#gbl-bottom a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    padding: 20px;
 }
 
 #growth-bottom-right {
